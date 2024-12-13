@@ -1,0 +1,54 @@
+/* styles.css */
+html {
+    font-size: 16px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin: 20px 0;
+}
+
+.box-min-width{
+    width: 100px;
+    height: 100px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 40px;
+
+}
+@media screen and (min-width: 480px) {
+    .box-min-width{
+        background: black;
+    }
+}
+@media screen and (min-width: 640px) {
+    .box-min-width{
+        background: orange;
+    }
+}
+@media screen and (min-width: 768px) {
+    .box-min-width{
+        background: blue;
+    }
+}
+@media screen and (min-width: 1024px){
+    .box-min-width{
+        background: green;
+    }
+}
+.imagen-responsive {
+    max-width: 100%;
+    height: auto;
+    /* transition: width 0.3s ease; */
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    object-fit: cover;
+}
